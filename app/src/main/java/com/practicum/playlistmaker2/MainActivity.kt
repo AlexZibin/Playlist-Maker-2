@@ -1,5 +1,6 @@
 package com.practicum.playlistmaker2
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -12,27 +13,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val btnSearch = findViewById<Button>(R.id.btn_search)
-        //val btnMedia = findViewById<Button>(R.id.btn_media)
-        val btnSettings = findViewById<Button>(R.id.btn_settings)
-
-        val imageClickListener1: View.OnClickListener = object : View.OnClickListener {
-            override fun onClick(v: View?) {
-                Toast.makeText(this@MainActivity, "Нажали на btn_search!", Toast.LENGTH_SHORT).show()
-            }
+        findViewById<Button>(R.id.btn_settings).setOnClickListener {
+            startActivity(Intent(this, SettingsActivity::class.java))
         }
-        btnSearch.setOnClickListener(imageClickListener1)
+
+        findViewById<Button>(R.id.btn_search).setOnClickListener {
+            startActivity(Intent(this, SearchActivity::class.java))
+        }
 
         findViewById<Button>(R.id.btn_media).setOnClickListener {
-            Toast.makeText(this@MainActivity, "Нажали на btn_media!", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, MediaActivity::class.java))
         }
-
-        val imageClickListener3: View.OnClickListener = object : View.OnClickListener {
-            override fun onClick(v: View?) {
-                Toast.makeText(this@MainActivity, "Нажали на btn_settings!", Toast.LENGTH_SHORT).show()
-            }
-        }
-        btnSettings.setOnClickListener(imageClickListener3)
-
     }
 }
