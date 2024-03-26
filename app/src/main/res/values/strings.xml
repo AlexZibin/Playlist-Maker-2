@@ -8,4 +8,6 @@
     <string name="share_app">Поделиться приложением</string>
     <string name="write_support">Написать в поддержку</string>
     <string name="user_agreement">Пользовательское соглашение</string>
+    <string name="media_text">Здесь будет Медиатека</string>
+    <string name="search_text">Здесь будет Поиск</string>
 </resources>
