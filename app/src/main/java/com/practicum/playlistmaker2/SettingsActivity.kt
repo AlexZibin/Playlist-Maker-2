@@ -15,7 +15,7 @@ class SettingsActivity : AppCompatActivity() {
             val intent = Intent()
             intent.putExtra("MainActivity", true)
             setResult(Activity.RESULT_OK, intent)
-            finish()
+            finish() // Испробовал все варианты - всё равно приложение вылетает, если раскомментировать этот listener (((
         }*/
     }
 }
