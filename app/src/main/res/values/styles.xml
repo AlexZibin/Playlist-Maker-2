@@ -1,9 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="StandardTextPadding">
+    <style name="StandardTextView2">
         <item name="android:paddingLeft">@dimen/padding_left</item>
         <item name="android:paddingTop">@dimen/padding_top</item>
         <item name="android:paddingBottom">@dimen/padding_bottom</item>
         <item name="android:paddingRight">@dimen/padding_right</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">61dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/font_size</item>
     </style>
+
+    <style name="ThreeMainButtons">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:inputType">textCapWords</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/title_font_size</item>
+        <item name="cornerRadius">@dimen/corner_radius</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">@dimen/icon_padding</item>
+        <item name="iconTint">@color/black</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:layout_marginTop">@dimen/layout_margin_main_screen</item>
+        <item name="android:layout_marginLeft">@dimen/layout_margin_main_screen</item>
+        <item name="android:layout_marginRight">@dimen/layout_margin_main_screen</item>
+    </style>
+
+
 </resources>
