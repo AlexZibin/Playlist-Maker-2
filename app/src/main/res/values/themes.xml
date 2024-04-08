@@ -3,7 +3,26 @@
     <style name="Base.Theme.PlaylistMaker" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/our_white</item>
+        <item name="colorPrimaryVariant">@color/our_white</item>
+        <item name="colorOnPrimary">@color/our_dark</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/our_blue</item>
+        <item name="colorSecondaryVariant">@color/our_blue</item>
+        <item name="colorOnSecondary">@color/our_white</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorSecondaryVariant</item>
     </style>
 
     <style name="Theme.PlaylistMaker" parent="Base.Theme.PlaylistMaker" />
+
+    <style name="Switch1.theme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:checked">false</item>
+        <item name="android:thumbTint">@color/switchThumbTintDay</item>
+        <item name="android:trackTint">@color/switchTrackTintDay</item>
+        <item name="android:textColor">@color/our_dark</item>
+    </style>
+
 </resources>

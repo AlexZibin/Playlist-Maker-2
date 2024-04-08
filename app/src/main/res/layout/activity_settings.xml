@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/white"
+    android:background="?attr/colorPrimary"
     android:orientation="vertical"
     >
 
@@ -30,7 +30,7 @@
             android:layout_gravity="center_vertical"
             android:paddingLeft="12dp"
             android:text="@string/settings"
-            android:textColor="@color/black"
+            android:textColor="?attr/colorOnPrimary"
             android:textSize="@dimen/title_font_size"
             android:fontFamily="@font/ys_display_medium"
             android:textFontWeight="500"
@@ -64,6 +64,7 @@
             android:text="@string/dark_theme"
             />
         <Switch
+            style="@style/Switch1.theme"
             android:layout_width="56dp"
             android:layout_height="wrap_content"
             android:paddingRight="6dp"

@@ -1,7 +1,26 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.PlaylistMaker2" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    <style name="Base.Theme.PlaylistMaker" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/our_dark</item>
+        <item name="colorPrimaryVariant">@color/our_dark</item>
+        <item name="colorOnPrimary">@color/our_white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/our_dark</item>
+        <item name="colorSecondaryVariant">@color/our_blue</item>
+        <item name="colorOnSecondary">@color/our_white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
     </style>
+
+    <style name="Switch1.theme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:checked">true</item>
+        <item name="android:thumbTint">@color/our_blue</item>
+        <item name="android:trackTint">@color/switchTrackTintNight</item>
+        <item name="android:textColor">@color/our_white</item>
+    </style>
+
+    <style name="Switch">sw1</style>
 </resources>

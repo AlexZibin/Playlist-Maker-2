@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/white"
+    android:background="@color/our_white"
     android:orientation="vertical"
     android:padding="20dp">
 
@@ -17,7 +17,6 @@
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:text="@string/search_text"
-        android:textColor="@color/black"
         android:textSize="@dimen/font_size" />
 
 
